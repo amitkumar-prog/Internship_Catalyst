@@ -1,0 +1,24 @@
+.site-header{
+    display:flex;
+    justify-content:space-between;
+    font-size:20px;
+}
+.headerhead{
+    margin-top: 45px;
+}
+nav{
+    margin-top:45px;
+}
+
+table{
+    margin-top:40px;
+    text-align:center;
+    width:2000px;
+    font-size:20px;
+    border-spacing: 5px;
+}
+footer{
+    text-align:center;
+    font-size:25px;
+    margin-top:20px;
+}

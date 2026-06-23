@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        .label{
+            font-size:22px;
+        }
+        .p-label{
+            font-size:18px;
+        }
+
+    </style>
+  
+</head>
+<body>
+    <header style="text-align:center;"><h1>Student Registration Form</h1></header>
+    <hr>
+    <br><br>
+
+    <section>
+        <form>
+         <label for="name" class="label">Name: </label>
+         <input type="text" id="name" placeholder=" Enter your name">
+
+         <br><br>
+
+         <label for="Mobile" class="label" >Mobile No: </label>
+         <input type="number" id="Mobile" placeholder=" Enter your mobile no">
+
+         <br><br>
+
+         <label for="dob" class="label" >DOB: </label>
+         <input type="date" id="dob">
+
+         <br><br>
+
+         <p class="label"> Gender:  </p>
+         <input type="radio" id="male" name="gender">
+         <label for="male" class="p-label">Male</label>
+
+         <input type="radio" id="female" name="gender">
+         <label for="female" class="p-label">Female</label>
+
+         <br><br>
+
+         <p class="label"> Hobbies:  </p>
+
+         <label for="reading" class="p-label">Reading: </label>
+         <input type="checkbox" name="hobbies" id="reading">
+
+         <label for="gaming" class="p-label">Gaming: </label>
+         <input type="checkbox" name="hobbies" id="gaming">
+
+         <label for="listening music" class="p-label">Listening music: </label>
+         <input type="checkbox" name="hobbies" id="listening music">
+
+         <label for="coding" class="p-label">Coding: </label>
+         <input type="checkbox" name="hobbies" id="coding">
+
+         <br><br>
+
+         <label for="address" class="p-label">Address: </label>
+         <textarea name="address" id="address" rows="3" placeholder="Enter your address"></textarea>
+
+         <br><br>
+
+         <label for="Course" class="label">Course: </label>
+         <select for="course" id="course">
+            <option value="">Select Yor Course</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Data analytics">Data Analaytics</option>
+          </select>
+
+          <br><br>
+
+          <button type="submit" >Submit</button>
+          <button type="reset">Reset</button>
+
+
+
+
+        </form>
+
+    </section>
+    
+</body>
+</html>

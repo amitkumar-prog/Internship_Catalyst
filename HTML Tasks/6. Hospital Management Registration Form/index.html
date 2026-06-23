@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management Registration Page</title>
+    <style>
+        .label{
+            font-size:22px;
+        }
+        .p-label{
+            font-size:18px;
+        }
+
+    </style>
+  
+</head>
+<body>
+    <header style="text-align:center;"><h1>Hospital Management Registration Page</h1></header>
+    <hr>
+    <br><br>
+
+    <section>
+        <form>
+         <label for="name" class="label">Patient Name: </label>
+         <input type="text" id="name" placeholder=" Enter your name">
+
+         <br><br>
+
+         <label for="age" class="label">Age: </label>
+         <input type="number" id="age">
+
+         <br><br>
+
+         <p class="label"> Gender:  </p>
+         <input type="radio" id="male" name="gender">
+         <label for="male" class="p-label">Male</label>
+
+         <input type="radio" id="female" name="gender">
+         <label for="female" class="p-label">Female</label>
+
+         <br><br>
+
+         <label for="bloodgroup" class="label">Blood Group: </label>
+         <select name="bloodgroup" id="bloodgroup">
+            <option value="">Select your blood group</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+         </select>
+
+         <br><br>
+
+         
+         <label for="Mobile" class="label" >Mobile No: </label>
+         <input type="number" id="Mobile" placeholder=" Enter your mobile no">
+
+         <br><br>
+
+          <label for="department" class="label">Department: </label>
+         <select for="department" id="department">
+            <option value="">Select Department</option>
+            <option value="Cardiology">Cardiology</option>
+            <option value="Neurology">Neurology</option>
+            <option value="Orthopedics">Orthopedics</option>
+            <option value="Pediatrics">Pediatrics</option>
+          </select>
+         
+          <br><br>
+
+          <label for="appointment" class="label">Appointment Date: </label>
+          <input type="datetime-local" id="appointment">
+
+          <br><br>
+          
+
+         <label for="medical" class="p-label">Address: </label>
+         <textarea name="medical" id="medical" rows="3" placeholder="Enter your medical history"></textarea>
+
+         <br><br>
+
+        
+
+          <br><br>
+
+          <button type="submit" >Submit</button>
+          
+
+
+
+
+        </form>
+
+    </section>
+    
+</body>
+</html>

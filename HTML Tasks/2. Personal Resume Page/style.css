@@ -1,0 +1,22 @@
+header{
+    text-align:center;
+    font-size:19px;
+}
+
+h2{
+    text-align:center;
+}
+p{
+    font-size:19px;
+}
+
+.table,.list{
+    font-size:19px;
+}
+
+footer{
+    font-size:19px;
+    text-align:center;
+}
+
+
