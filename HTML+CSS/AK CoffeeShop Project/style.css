@@ -7,20 +7,33 @@
 
 body{
     background: url("/Assets/background.jpg");
+    
     background-repeat: no-repeat;
     background-size: cover;
    
 }
+
+/*=============================Nav-bar==================================*/
 
 .nav-bar{
     display:flex;
     justify-content: space-between;
     background-color: rgba(255,255,255,0.1);
     backdrop-filter: blur(5px);
-    width: 100%;
+    width: 98%;
     height: 180px;
-     
-   
+    margin-left: 20px;
+    box-shadow: 0 0 10px white; 
+    border-radius: 30px;
+    margin-top: 20px;
+    
+}
+
+.nav-bar i{
+    margin-top: 80px;
+    margin-left: 450px;
+    color: #fff5fa;
+    font-size: 24px;
 }
 
 
@@ -56,7 +69,7 @@ body{
     margin: 55px 200px 0 0;
     border-radius: 30px;
     font-size: 20px;
-    font-weight: 1000;
+    font-weight: bold;
     color: #fff5fa;
     border: none;
     background-color: #ffa75a;
@@ -69,14 +82,20 @@ body{
     color: #000;
 }
 
-.hero{
+/*===========================================Hero-section==================================*/
+
+#hero{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0px;
-    background: rgba(0,0,0,0.1);
+    margin: 50px 0 0 20px;
+    box-shadow: 0 0 10px white;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.1);
     backdrop-filter: blur(5px);
-    height: 820px;
+    height: 800px;
+    width: 98%;
+
 }
 
 .head1{
@@ -107,7 +126,7 @@ body{
     margin: 55px 25px 0 0;
     border-radius: 30px;
     font-size: 20px;
-    font-weight: 1000;
+    font-weight: bold;
     color: #fff5fa;
     border: none;
     background-color: #ffa75a;
@@ -130,7 +149,7 @@ body{
     margin: 55px 25px 0 0;
     border-radius: 30px;
     font-size: 20px;
-    font-weight: 1000;
+    font-weight: bold;
     color: #fff5fa;
     border: none;
     background-color: #ffa75a;
@@ -179,11 +198,11 @@ body{
 
 .left-part{
     
-     box-shadow: 0 0 10px grey;
-     border-radius: 15px;
-    background-color: rgba(255,255,255,0.1);
+    box-shadow: 0 0 10px #000;
+    border-radius: 15px;
+    background-color: rgba(127,127,127,0.1);
     backdrop-filter: blur(5px);
-    margin-left: 100px;
+    margin-left: 150px;
     margin-top: 20px;
     height: 700px;
     width: 730px;
@@ -193,8 +212,8 @@ body{
 }
 
 .left-part:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px grey;
 }
 
 .right-part{
@@ -202,19 +221,19 @@ body{
     grid-template-columns: auto auto;
     height: 700px;
     width: 750px;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(127,127,127,0.1);
     backdrop-filter: blur(5px);
     margin-right: 150px;
     margin-top: 20px;
     border-radius: 15px;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 10px #000;
     transition: transform 0.3s, box-shadow 0.3s ;
 
 }
 
 .right-part:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px grey;
 }
 
 .coffee1, .coffee2, .coffee3, .coffee4{
@@ -223,209 +242,130 @@ body{
     
 }
 
-/* ================= Mobile ================= */
+/*==================================================Our-services==================================*/
 
-@media screen and (max-width: 480px){
 
-    /* Navbar */
-
-    .nav-bar{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        padding: 20px;
-        gap: 20px;
-    }
-
-    .nav-link{
-        flex-direction: column;
-        margin-left: 0;
-        gap: 15px;
-    }
-
-    .nav-link a{
-        font-size: 18px;
-    }
-
-    .login-signup{
-        margin: 0;
-        width: 150px;
-        height: 40px;
-        font-size: 18px;
-    }
-
-    /* Hero */
-
-    .hero{
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-    }
-
-    .left-part,
-    .right-part{
-        width: 100%;
-        margin: 20px 0;
-    }
-
-    .left-part{
-        height: auto;
-        padding: 20px;
-    }
-
-    .head1{
-        font-size: 45px;
-        margin: 0;
-    }
-
-    .head2{
-        font-size: 24px;
-        margin: 20px 0;
-    }
-
-    .content{
-        margin: 0;
-        font-size: 16px;
-    }
-
-    .ordernow,
-    .explore{
-        width: 190px;
-        height: 40px;
-        margin: 20px 0 0 25px;
-    }
-
-    /* Statistics */
-
-    .customers h3,
-    .customers h1,
-    .deliveries h3,
-    .deliveries h1{
-        margin-left: 0;
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    /* Images */
-
-    .right-part{
-        grid-template-columns: 1fr;
-        height: auto;
-        justify-items: center;
-    }
-
-    .coffee1,
-    .coffee2,
-    .coffee3,
-    .coffee4{
-        width: 90%;
-        height: auto;
-        margin: 10px 0 0 15px;
-    }
+#our-services{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    margin: 50px 0 0 20px;
+    box-shadow: 0 0 10px white;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    height: 850px;
+    width: 98%;
 
 }
 
-/* ================= Tablet ================= */
 
-@media screen and (min-width: 481px) and (max-width: 768px){
+    
 
-    .nav-bar{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-        padding: 25px;
-        gap: 20px;
-    }
 
-    .nav-link{
-        margin-left: 0;
-        gap: 25px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 
-    .nav-link a{
-        font-size: 20px;
-    }
+.card-1,.card-2,.card-3,.card-4,.card-5,.card-6{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 380px;
+    background-color: rgba(127,127,127,0.1);
+    backdrop-filter: blur(5px);
+    margin-right: 150px;
+    
+    border-radius: 15px;
+    box-shadow: 0 0 10px #000;
+    transition: transform 0.3s, box-shadow 0.3s ;
+}
 
-    .login-signup{
-        margin: 0;
-        width: 150px;
-        height: 40px;
-    }
-
-    /* Hero Section */
-
-    .hero{
-        flex-direction: column;
-        height: auto;
-        padding: 30px;
-    }
-
-    .left-part,
-    .right-part{
-        width: 90%;
-        margin: 20px 0;
-    }
-
-    .left-part{
-        height: auto;
-        padding: 30px;
-    }
-
-    .head1{
-        font-size: 60px;
-        margin-left: 35px;
-    }
-
-    .head2{
-        font-size: 28px;
-        margin-left: 35px;
-    }
-
-    .content{
-        margin-left: 35px;
-        font-size: 18px;
-    }
-
-    .ordernow,
-    .explore{
-        margin-left: 35px;
-        width: 220px;
-    }
-
-    /* Statistics */
-
-    .customers h3,
-    .customers h1,
-    .deliveries h3,
-    .deliveries h1{
-        margin-left: 0;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    /* Images */
-
-    .right-part{
-        grid-template-columns: repeat(2,1fr);
-        justify-items: center;
-        height: auto;
-        padding: 20px;
-    }
-
-    .coffee1,
-    .coffee2,
-    .coffee3,
-    .coffee4{
-        width: 220px;
-        height: 220px;
-        margin: 15px;
-    }
+.card-1:hover,.card-2:hover,.card-3:hover,.card-4:hover,.card-5:hover,.card-6:hover{
+    
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px grey;
 
 }
+
+
+
+.card-1{
+    margin-top: 130px;
+    margin-left: 220px;
+}
+
+
+.card-2{
+    margin-top: 130px;
+    margin-left: 30px;
+
+}
+
+.card-3{
+    margin-top: 130px;
+    margin-left: 30px;
+
+}
+
+.card-4{
+    margin-top: 30px;
+    margin-left: 220px;
+}
+
+.card-5{
+
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+
+.card-6{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.card-head{
+    color: #fff5fa;
+    font-size: 34px;
+    margin-top: -30px;
+}
+
+p{
+    font-size: 20px;
+    color: #fff5fa;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.card-1 i,.card-2 i,.card-3 i,.card-4 i,.card-5 i,.card-6 i{
+    margin-bottom: 35px;
+    font-size: 34px;
+    color: #fff5fa;
+}
+
+
+
+.readmore{
+    margin-top: 30px;
+    padding-top: 5px 0 0 5px;
+    height: 45px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    border:none;
+    border-radius: 25px;
+    background: #ffa75a;
+    transition: scale 0.02s ease, background-color 0.02s ease, color 0.02 ease;
+
+}
+
+.readmore:hover{
+    transform: scale(1.09);
+    background-color: rgb(255,0,0);
+    color: #fff5fa;
+}
+
+
+
 
 
 
