@@ -1,0 +1,517 @@
+/* ============================================================
+   TABLET (max-width: 1024px)
+   ============================================================ */
+@media (max-width: 1024px) {
+
+    /* ---------- Nav-bar ---------- */
+    .nav-bar{
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+        gap: 15px;
+    }
+
+    .nav-link{
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 25px;
+    }
+
+    .nav-bar i{
+        margin: 0;
+    }
+
+    .login-signup{
+        margin: 0 auto;
+    }
+
+    /* ---------- Hero-section ---------- */
+    #hero{
+        flex-direction: column;
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .left-part{
+        margin: 20px auto;
+        width: 90%;
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .head1{
+        font-size: 55px;
+        margin-left: 30px;
+    }
+
+    .head2, .content{
+        margin-left: 30px;
+    }
+
+    .ordernow, .explore{
+        margin-left: 30px;
+    }
+
+    .customers h3, .customers h1{
+        margin-left: 30px;
+    }
+
+    .deliveries h3{
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .deliveries h1{
+        margin-left: 30px;
+    }
+
+    .right-part{
+        margin: 20px auto;
+        width: 90%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .coffee1, .coffee2, .coffee3, .coffee4{
+        width: 220px !important;
+        height: 220px !important;
+        margin: 15px 0 0 20px;
+    }
+
+    /* ---------- Our-services ---------- */
+    #our-services{
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .head3{
+        margin: 25px auto 0;
+        width: 50%;
+    }
+
+    .service-cards{
+        grid-template-columns: 1fr 1fr;
+        margin-left: 0;
+        width: 92%;
+        height: auto;
+        margin: 30px auto 0;
+        gap: 25px;
+    }
+
+    .card-1, .card-2, .card-3, .card-4, .card-5, .card-6{
+        margin: 0 !important;
+        width: 100%;
+    }
+
+    /* ---------- Pricing-section ---------- */
+    #our-pricing{
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .head4{
+        margin: 25px auto 0;
+        width: 55%;
+    }
+
+    .price-cards{
+        grid-template-columns: 1fr 1fr;
+        margin: 30px auto 0;
+        width: 90%;
+        height: auto;
+        padding: 0;
+        gap: 25px;
+    }
+
+    .card-7, .card-8, .card-9{
+        margin-right: 0;
+        width: 100%;
+    }
+
+    /* ---------- Contact-section ---------- */
+    #ContactUs{
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .head5{
+        margin: 25px auto 0;
+        width: 55%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .form-box{
+        width: 85%;
+    }
+
+    /* ---------- Footer ---------- */
+    footer{
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .head6{
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 25px 0;
+        gap: 25px;
+    }
+
+    .quick-link{
+        margin-left: 30px;
+    }
+
+    .services{
+        margin-left: 30px;
+    }
+
+    .services h1{
+        margin-top: 0;
+    }
+
+    .contact{
+        margin-left: 30px;
+    }
+
+    .contact h1{
+        margin-top: 0;
+    }
+
+    .follow{
+        height: auto;
+        padding: 20px 0;
+    }
+}
+
+
+/* ============================================================
+   MOBILE / TABLET-PORTRAIT (max-width: 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+
+    body{
+        background-attachment: scroll;
+    }
+
+    /* ---------- Nav-bar ---------- */
+    .nav-link{
+        gap: 12px 18px;
+    }
+
+    .nav-link a{
+        font-size: 16px;
+    }
+
+    .nav-bar i{
+    margin-left: 140px;
+    color: #fff5fa;
+    font-size: 18px;
+}
+
+
+    .login-signup{
+        height: 50px;
+        width: 150px;
+        font-size: 16px;
+    }
+
+    /* ---------- Hero-section ---------- */
+    .head1{
+        font-size: 38px;
+        margin-left: 20px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .head2{
+        font-size: 22px;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    .content{
+        font-size: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .ordernow, .explore{
+        display: block;
+        margin: 20px auto;
+    }
+
+    .left-part > div{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .customers h3, .customers h1{
+        margin-left: 0;
+        text-align: center;
+        font-size: 14px;
+    }
+    .deliveries h3, .deliveries h1{
+        margin-left: 0;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .right-part{
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
+
+    .coffee1, .coffee2, .coffee3, .coffee4{
+        width: 140px !important;
+        height: 140px !important;
+        margin: 10px auto;
+    }
+
+    /* ---------- Our-services ---------- */
+    .head3{
+        width: 70%;
+    }
+
+    .service-cards{
+        grid-template-columns: 1fr;
+        width: 88%;
+    }
+
+    /* ---------- Pricing-section ---------- */
+    .head4{
+        width: 75%;
+    }
+
+    .price-cards{
+        grid-template-columns: 1fr;
+        width: 85%;
+    }
+
+    /* ---------- Contact-section ---------- */
+    .head5{
+        width: 75%;
+    }
+
+    .head5 h1{
+        font-size: 32px;
+    }
+
+    .head5 p{
+        font-size: 18px;
+    }
+
+    .form-box{
+        width: 90%;
+        padding: 25px;
+    }
+
+    /* ---------- Footer ---------- */
+    .head6 h1{
+        font-size: 34px;
+        margin-left: 25px;
+    }
+
+    .head6 p{
+        font-size: 18px;
+        margin-left: 25px;
+    }
+}
+
+
+/* ============================================================
+   SMALL MOBILE (max-width: 480px)
+   ============================================================ */
+@media (max-width: 480px) {
+
+    .nav-bar{
+        width: 94%;
+        margin-left: 12px;
+        border-radius: 20px;
+    }
+
+    .nav-link{
+        justify-content: center;
+        margin: 0;
+    }
+
+    .nav-link a{
+        font-size: 14px;
+    }
+
+    #hero, #our-services, #our-pricing, #ContactUs, footer{
+        width: 94%;
+        margin-left: 12px;
+        border-radius: 20px;
+    }
+
+    /* ---------- Hero ---------- */
+    .left-part{
+        width: 92%;
+    }
+
+    .head1{
+        font-size: 28px;
+    }
+
+    .head2{
+        font-size: 18px;
+    }
+
+    .content{
+        font-size: 14px;
+    }
+
+    .ordernow, .explore{
+        width: 160px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .right-part{
+        grid-template-columns: 1fr;
+        width: 85%;
+    }
+
+    .coffee1, .coffee2, .coffee3, .coffee4{
+        width: 100%  !important;
+        max-width: 260px !important;
+        height: auto !important;
+        margin: 10px auto;
+    }
+
+    /* ---------- Services ---------- */
+    .head3{
+        width: 85%;
+    }
+
+    .head3 h1{
+        font-size: 30px;
+    }
+
+    .service-cards{
+        width: 92%;
+    }
+
+    .card-1, .card-2, .card-3, .card-4, .card-5, .card-6{
+        width: 100%;
+        height: auto;
+        min-height: 260px;
+        padding: 20px 10px;
+    }
+
+    /* ---------- Pricing ---------- */
+    .head4{
+        width: 90%;
+    }
+
+    .head4 h1{
+        font-size: 30px;
+    }
+
+    .head4 p{
+        font-size: 18px;
+    }
+
+    .price-cards{
+        width: 92%;
+    }
+
+    .card-7, .card-8, .card-9{
+        width: 100%;
+        height: auto;
+        min-height: 350px;
+        padding: 20px 10px;
+    }
+
+    /* ---------- Contact ---------- */
+    .head5{
+        width: 90%;
+    }
+
+    .head5 h1{
+        font-size: 26px;
+    }
+
+    .head5 p{
+        font-size: 15px;
+    }
+
+    .form-box{
+        width: 94%;
+        padding: 20px;
+    }
+
+    .form-box input, .form-box select, .form-box textarea{
+        font-size: 14px;
+    }
+
+    /* ---------- Footer ---------- */
+    .head6{
+        text-align: center;
+    }
+
+    .head6 h1{
+        margin-left: 0;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .head6 p{
+        margin-left: 0;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .footer-content{
+        margin-left: 12px;
+        width: 92%;
+    }
+
+    .quick-link, .services, .contact{
+        margin-left: 15px;
+    }
+
+    .quick-link ul li, .services ul li, .contact ul li{
+        gap: 15px;
+    }
+
+    .quick-link ul a{
+        font-size: 16px;
+    }
+
+    .follow{
+        margin-left: 12px;
+        width: 92%;
+    }
+
+    .follow h1{
+        margin-left: 20px;
+        font-size: 26px;
+    }
+
+    .follow ul{
+        margin-left: 40px;
+        font-size: 16px;
+    }
+
+    .copyright{
+        margin-left: 12px;
+        width: 92%;
+    }
+
+    .copyright p{
+        font-size: 13px;
+        padding: 0 10px;
+    }
+}
