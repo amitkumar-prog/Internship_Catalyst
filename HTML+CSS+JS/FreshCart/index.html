@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>FreshCart</title>
+</head>
+<body>
+<!--=====================Header&Navigation==================== -->
+    <header>
+        <nav>
+
+            <div class="logo-title">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h1 class="title">
+                    <span class="black">Fresh</span><span class="green">Cart</span>
+                </h1>
+                
+
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#customer">Customers</a></li>
+                <li><a href="#billing">Billing</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+            <div class="nav-icons">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count">0</span>
+                <i class="fa-solid fa-moon" id="themeToggle"></i>
+
+                
+            </div>
+
+            
+        </nav>
+    </header>
+
+    <main>
+
+<!--============================Hero-section============================-->
+        <section id="hero">
+
+            <div class="hero-content">
+
+                <div class="left-hero">
+
+                    <h1>
+
+                        <span class="green-hero">Fresh</span>
+                        Groceries<br>
+                        Smarter Billing<br>
+                        <span class="green-hero">Better</span>
+                        Shopping
+                            
+                    </h1>
+
+                    <p>Shop from a wide range of fresh fruits,<br>
+                    vegetables, dairy products, snacks,<br>
+                    and daily essentials—all at affordable prices.
+                    </p>
+
+                    <button class="start">Start Billing<i class="fa-solid fa-arrow-right"></i></button>
+
+                    <button class="view">Veiw Products</button>
+
+                    
+
+                </div>
+
+            
+
+                <div class="right-hero">
+
+                    <img src="/assets/images/hero-image.jfif" alt="">
+
+                </div>
+
+            </div>
+
+            <div class="stats">
+
+                <div class="user">
+                    <i class="fa-solid fa-user-group"></i>
+                    <h1>5000+</h1>
+                    <P>Happy Customers</P>
+                </div>
+
+                <div class="basket">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <h1>250+</h1>
+                    <p>Products</p>
+                </div>
+
+                <div class="star">
+                    <i class="fa-regular fa-star"></i>
+                    <h1>99%</h1>
+                    <p>Fresh Quality</p>
+                </div>
+
+                <div class="headphone">
+                    <i class="fa-solid fa-headset"></i>
+                    <h1>24/7</h1>
+                    <p>Support</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--================ FLASH SALE =================-->
+
+        <section id="offers">
+
+            <div class="flash-container">
+
+                <div class="flash-left">
+
+                    <span class="sale-tag">🔥 Limited Time Offer</span>
+
+                    <h2>Get 15% OFF on Your First Grocery Order</h2>
+
+                    <p>
+                        Shop fresh fruits, vegetables and daily essentials.
+                        Hurry! This offer expires soon.
+                    </p>
+
+                    <button id="claimOffer">
+                        Shop Now
+                    </button>
+
+                </div>
+
+                <div class="flash-right">
+
+                    <h3>Offer Ends In</h3>
+
+                    <div id="timer">
+
+                        <div class="time-box">
+                            <span id="minutes">01</span>
+                            <small>MIN</small>
+                        </div>
+
+                        <span class="colon">:</span>
+
+                        <div class="time-box">
+                            <span id="seconds">30</span>
+                            <small>SEC</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+<!--===============================================Products=================================-->
+        <section id="products">
+
+            <div class="product-title">
+                <h1>Featured Products</h1>
+                
+            </div>
+
+            <div class="product-control">
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text"  id="searchInput" placeholder="search products....">
+                </div>
+
+                <div class="category-box">
+                    <select id="categoryFilter">
+
+                        <option>All</option>
+
+                        <option>Fruits</option>
+
+                        <option>Vegetables</option>
+
+                        <option>Dairy</option>
+
+                        <option>Bakery</option>
+
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="product-grid">
+
+                <div class="product-card" data-name="Apple" data-price="180" data-category="Fruits">
+
+                    <img src="/assets/images/products/apple.jpg" alt="apple">
+                    <h1>Apple</h1>
+
+                    <h3 class="price">₹180/kg</h3>
+                    <p class="rating">
+                        <i class="fa-solid fa-star"></i>4
+                    </p>
+
+                    <button class="product-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to cart
+
+                    </button>
+
+                </div>
+
+                <div class="product-card" data-name="Banana" data-price="60" data-category="Fruits">
+
+                    <img src="/assets/images/products/banana.jpg" alt="banana">
+                    <h1>Banana</h1>
+
+                    <h3 class="price">₹60/dz</h3>
+                    <p class="rating">
+                        <i class="fa-solid fa-star"></i>5
+                    </p>
+
+                    <button class="product-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to cart
+
+                    </button>
+                    
+                </div>
+
+                <div class="product-card" data-name="Milk" data-price="100" data-category="Dairy">
+
+                    <img src="/assets/images/products/milk.jpg" alt="milk">
+                    <h1>Milk</h1>
+
+                    <h3 class="price">₹100/L</h3>
+                    <p class="rating">
+                        <i class="fa-solid fa-star"></i>4
+                    </p>
+
+                    <button class="product-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to cart
+
+                    </button>
+                    
+                </div>
+
+                <div class="product-card" data-name="Bread" data-price="50" data-category="Bakery">
+
+                    <img src="/assets/images/products/bread.jpg" alt="bread">
+                    <h1>Bread</h1>
+
+                    <h3 class="price">₹50/Pt</h3>
+                    <p class="rating">
+                        <i class="fa-solid fa-star"></i>4
+                    </p>
+
+                    <button class="product-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to cart
+
+                    </button>
+                    
+                </div>
+
+                <div class="product-card" data-name="Potato" data-price="150" data-category="Vegetables">
+
+                    <img src="/assets/images/products/potato.png" alt="potato">
+                    <h1>Potato</h1>
+
+                    <h3 class="price">₹150/kg</h3>
+                    <p class="rating">
+                        <i class="fa-solid fa-star"></i>5
+                    </p>
+
+                    <button class="product-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to cart
+
+                    </button>
+                    
+                </div>
+
+                <div class="product-card" data-name="Tomato" data-price="160" data-category="Vegetables">
+
+                    <img src="/assets/images/products/tomato.png" alt="tomato">
+                    <h1>Tomato</h1>
+
+                    <h3 class="price">₹160/kg</h3>
+                    <p class="rating">
+                        <i class="fa-solid fa-star"></i>4.5
+                    </p>
+
+                    <button class="product-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to cart
+
+                    </button>
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+        
+
+<!--================ Shopping Cart =================-->
+
+        <section id="cart">
+
+            <div class="cart-heading">
+
+                <h2>Shopping Cart</h2>
+
+                <p>Review your selected grocery items.</p>
+
+            </div>
+
+            <div class="cart-container">
+
+                <table class="cart-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="cart-body">
+
+                    <!-- JavaScript will add products here -->
+
+                        <tr>
+
+                            <td colspan="5" class="empty-cart">
+                            Your cart is empty.
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!--================ Customer Details =================-->
+
+        <section id="customer">
+
+            <div class="customer-heading">
+
+                <h2>Customer Details</h2>
+
+                <p>Please enter your information before generating the bill.</p>
+
+            </div>
+
+            <div class="customer-container">
+
+                <form id="customer-form">
+
+                    <div class="input-box">
+
+                        <label>Full Name</label>
+
+                        <input
+                        type="text"
+                        id="customerName"
+                        placeholder="Enter your name">
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Mobile Number</label>
+
+                        <input
+                            type="tel"
+                            id="customerPhone"
+                            placeholder="Enter mobile number"
+                        >
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Email</label>
+
+                        <input
+                            type="email"
+                            id="customerEmail"
+                            placeholder="Enter email"
+                        >
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Address</label>
+
+                        <textarea
+                        id="customerAddress"
+                        placeholder="Enter your address"
+                        ></textarea>
+
+                    </div>
+
+                    <button type="button" id="saveCustomer">
+                        Save Customer
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!--==================== BILL SUMMARY ====================-->
+
+        <section id="billing">
+
+            <div class="billing-heading">
+
+                <h2>Bill Summary</h2>
+
+                <p>Your final invoice will appear below.</p>
+
+            </div>
+
+            <div class="bill-container">
+
+                <div class="bill-row">
+                    <span>Subtotal</span>
+                    <span id="subtotal">₹0</span>
+                </div>
+
+                <div class="bill-row">
+                    <span>GST (18%)</span>
+                    <span id="gst">₹0</span>
+                </div>
+
+                <div class="bill-row">
+                    <span>Discount</span>
+                    <span id="discount">₹0</span>
+                </div>
+
+                <hr>
+
+                <div class="bill-row total-row">
+
+                    <span>Total Amount</span>
+
+                    <span id="grandTotal">₹0</span>
+
+                </div>
+
+                <button id="generateBill">
+
+                    Generate Bill
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <!--===================== FOOTER =====================-->
+
+    <footer id="contact">
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+
+                <h2>
+                    <span class="green">Fresh</span>Cart
+                </h2>
+
+                <p>
+                    Fresh groceries delivered to your doorstep with
+                    quality, affordability and fast service.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="#hero">Home</a></li>
+
+                    <li><a href="#products">Products</a></li>
+
+                    <li><a href="#cart">Cart</a></li>
+
+                    <li><a href="#billing">Billing</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-contact">
+
+                <h3>Contact</h3>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 987654XXXX
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    freshcart@gmail.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Bhopal, India
+                </p>
+
+            </div>
+
+            <div class="footer-social">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="copyright">
+
+            <p>
+                © 2026 FreshCart. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
