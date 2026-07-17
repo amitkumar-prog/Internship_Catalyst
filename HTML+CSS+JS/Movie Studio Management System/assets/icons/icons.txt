@@ -1,0 +1,16 @@
+<i class="fa-solid fa-video"></i>
+<i class="fa-solid fa-ticket"></i>
+<i class="fa-solid fa-sun"></i>
+<i class="fa-solid fa-moon"></i>
+<i class="fa-solid fa-magnifying-glass"></i>
+<i class="fa-solid fa-shield-halved"></i>
+<i class="fa-solid fa-clapperboard"></i>
+<i class="fa-regular fa-user"></i>
+<i class="fa-regular fa-star"></i>
+<i class="fa-solid fa-headset"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-square-instagram"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-youtube"></i>
+<i class="fa-regular fa-clock"></i>

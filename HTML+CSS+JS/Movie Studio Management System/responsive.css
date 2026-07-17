@@ -1,0 +1,281 @@
+/* ===========================
+   TABLET (1024px)
+=========================== */
+
+@media (max-width:1024px){
+
+    nav{
+        width:95%;
+        padding:18px 25px;
+    }
+
+    .nav-links{
+        gap:20px;
+    }
+
+    .nav-links a{
+        font-size:15px;
+    }
+
+    .title{
+        font-size:28px;
+    }
+
+    .hero-content{
+        flex-direction:column;
+        text-align:center;
+        padding:50px 35px;
+    }
+
+    .hero-left h1{
+        font-size:48px;
+    }
+
+    .hero-tag{
+        width:auto;
+    }
+
+    .hero-btn{
+        justify-content:center;
+    }
+
+    .hero-right img{
+        width:80%;
+    }
+
+    .movie-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    #bookingForm{
+        grid-template-columns:1fr;
+    }
+
+    #bookTicket{
+        grid-column:auto;
+    }
+
+    .summary-container{
+        width:100%;
+    }
+
+    .footer-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+/* ===========================
+   MOBILE (768px)
+=========================== */
+
+@media (max-width:768px){
+
+    nav{
+
+        flex-direction:column;
+        height:auto;
+        gap:20px;
+        padding:20px;
+
+    }
+
+    .logo-title{
+
+        justify-content:center;
+
+    }
+
+    .nav-links{
+
+        flex-direction:column;
+        gap:15px;
+
+    }
+
+    .nav-icons{
+
+        justify-content:center;
+
+    }
+
+    .hero-content{
+
+        flex-direction:column;
+        padding:35px 20px;
+
+    }
+
+    .hero-left{
+
+        text-align:center;
+
+    }
+
+    .hero-left h1{
+
+        font-size:38px;
+
+    }
+
+    .hero-btn{
+
+        flex-direction:column;
+
+    }
+
+    .primary-btn,
+    .secondary-btn{
+
+        width:100%;
+
+    }
+
+    .hero-right img{
+
+        width:100%;
+        margin-top:25px;
+
+    }
+
+    .movie-control{
+
+        flex-direction:column;
+        gap:20px;
+
+    }
+
+    .search-box,
+    .category-box select{
+
+        width:100%;
+
+    }
+
+    .movie-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    #bookingForm{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .summary-container{
+
+        width:100%;
+
+        padding:20px;
+
+    }
+
+    .summary-row{
+
+        font-size:16px;
+
+    }
+
+    #timer{
+
+        flex-wrap:wrap;
+
+    }
+
+    #timer div{
+
+        width:80px;
+        height:80px;
+
+    }
+
+    .footer-container{
+
+        grid-template-columns:1fr;
+        text-align:center;
+
+    }
+
+    .social-icons{
+
+        justify-content:center;
+
+    }
+
+}
+
+
+/* ===========================
+   SMALL MOBILE (480px)
+=========================== */
+
+@media (max-width:480px){
+
+    .hero-left h1{
+
+        font-size:30px;
+
+    }
+
+    .movie-title h1,
+    .booking-heading h1,
+    .summary-heading h1{
+
+        font-size:30px;
+
+    }
+
+    .timer-box{
+
+        padding:25px;
+
+    }
+
+    #timer span{
+
+        font-size:28px;
+
+    }
+
+    .title{
+
+        font-size:24px;
+
+    }
+
+    #booking{
+        width:95%;
+        padding:15px;
+    }
+
+    .booking-container{
+        width:100%;
+        padding:20px 15px;
+    }
+
+    #bookingForm{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        gap:18px;
+    }
+
+    .input-box{
+        width:100%;
+    }
+
+    .input-box input,
+    .input-box select{
+        width:100%;
+        max-width:100%;
+        padding:14px;
+    }
+
+    #bookTicket{
+        width:100%;
+    }
+
+}

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>MovieHub</title>
+</head>
+<body>
+<!--=====================Header&Navigation==================== -->
+    <header>
+        <nav>
+
+            <div class="logo-title">
+
+                <i class="fa-solid fa-video"></i>
+                <h1 class="title">
+                    <span class="white">Movie</span><span class="red">Hub</span>
+                </h1>
+                
+
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#hero">HOME</a></li>
+                <li><a href="#movies">MOVIES</a></li>
+                <li><a href="#booking">BOOKING</a></li>
+                <li><a href="#summary">SUMMARY</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+
+            </ul>
+
+            <div class="nav-icons">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-moon" id="themeToggle"></i>
+                <i class="fa-regular fa-user"></i>
+
+                
+            </div>
+
+            
+        </nav>
+    </header>
+
+    <main>
+
+<!--============================Hero-section============================-->
+        <section id="hero">
+
+            <div class="hero-content">
+
+                <div class="hero-left">
+
+                    
+
+                    <span class="hero-tag"><h3>Movie Booking System</h3></span>
+
+                    <h1>
+                        Book Your
+                        <span>Favourite Movies</span>
+                        Anytime
+                    </h1>
+                                       
+                    <p>Discover the latest blockbuster movies,
+                        reserve your seats instantly and
+                        enjoy an amazing cinema experience.
+                    </p>
+
+                    <div class="hero-btn">
+
+                        <button class="primary-btn">Browse Movies<i class="fa-solid fa-video"></i></button>
+
+                        <button class="secondary-btn">Book Now<i class="fa-solid fa-ticket"></i></button>
+
+                    </div>
+                    
+
+                </div>
+
+            
+
+                <div class="hero-right">
+
+                    <img src="/assets/images/hero.jfif" alt="hero-image">
+
+                </div>
+
+            </div>
+
+            
+        </section>
+
+
+<!--===============================================Movies=================================-->
+        <section id="movies">
+
+            <div class="movie-title">
+                <h1>Browse Movies</h1>
+                <p>Choose your favorite movie and book your ticket instantly.
+                </p>
+                
+            </div>
+
+            <div class="movie-control">
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text"  id="searchMovie" placeholder="search movies....">
+                </div>
+
+                <div class="category-box">
+                    <select id="movieFilter">
+
+                        <option>All</option>
+
+                        <option>Action</option>
+
+                        <option>Sci-Fi</option>
+
+                        <option>Comedy</option>
+
+                        <option>Animation</option>
+
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="movie-grid">
+
+                <div class="movie-card">
+
+                    <img src="/assets/images/movies/avengers.jfif" alt="avengers">
+                    <h1>Avengers</h1>
+
+                    <p class="genre">Action</p>
+
+                    <h3 class="price">₹250</h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+
+                    </div>
+
+                    <button class="book-btn">
+                        <i class="fa-solid fa-ticket"></i>
+                        Book Ticket
+
+                    </button>
+
+                </div>
+
+                <div class="movie-card">
+
+                    <img src="/assets/images/movies/interstellar.jfif" alt="interstellar">
+                    <h1>Interstellar</h1>
+
+                    <p class="genre">Sci-Fi</p>
+
+                    <h3 class="price">₹300</h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <button class="book-btn">
+                        <i class="fa-solid fa-ticket"></i>
+                        Book Ticket
+
+                    </button>
+                    
+                </div>
+
+                <div class="movie-card">
+
+                    <img src="/assets/images/movies/joker.jfif" alt="joker">
+                    <h1>Joker</h1>
+
+                    <p class="genre">Drama</p>
+
+                    <h3 class="price">₹220</h3>
+
+                    <div class="rating">
+
+                        ⭐⭐⭐⭐☆
+
+                    </div>
+
+                    <button class="book-btn">
+                        <i class="fa-solid fa-ticket"></i>
+                        Book Ticket
+
+                    </button>
+                    
+                </div>
+
+                <div class="movie-card">
+
+                    <img src="/assets/images/movies/spiderman.jfif" alt="spiderman">
+                    <h1>Spider Man</h1>
+
+                    <p class="genre">Action</p>
+
+                    <h3 class="price">₹280</h3>
+
+                    <div class="rating">
+
+                        ⭐⭐⭐⭐⭐
+
+                    </div>
+
+                    <button class="book-btn">
+                        <i class="fa-solid fa-ticket"></i>
+                        Book Ticket
+
+                    </button>
+                    
+                </div>
+
+                <div class="movie-card">
+
+                    <img src="/assets/images/movies/inception.jfif" alt="inception">
+                    <h1>Inception</h1>
+
+                    <p class="genre">Sci-Fi</p>
+
+                    <h3 class="price">₹270</h3>
+
+                    <div class="rating">
+
+                        ⭐⭐⭐⭐⭐
+
+                    </div>
+
+                    <button class="book-btn">
+                        <i class="fa-solid fa-ticket"></i>
+                        Book Ticket
+
+                    </button>
+                    
+                </div>
+
+                <div class="movie-card">
+
+                    <img src="/assets/images/movies/frozen.jfif" alt="frozen">
+                    <h1>Frozen</h1>
+
+                    <p class="genre">Animation</p>
+
+                    <h3 class="price">₹180</h3>
+
+                    <div class="rating">
+
+                        ⭐⭐⭐⭐☆
+
+                    </div>
+
+                    <button class="book-btn">
+                        <i class="fa-solid fa-ticket"></i>
+                        Book Ticket
+
+                    </button>
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+        
+
+<!--================ Booking Section =================-->
+
+        <section id="booking">
+
+            <div class="booking-heading">
+
+                <h1>Book Your Movie</h1>
+
+                <p>Fill in your details and reserve your seat.</p>
+
+            </div>
+
+            <div class="booking-container">
+
+                 <form id="bookingForm">
+
+                    <div class="input-box">
+
+                        <label>Full Name</label>
+
+                        <input
+                        type="text"
+                        id="customerName"
+                        placeholder="Enter your name">
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Mobile Number</label>
+
+                        <input
+                            type="tel"
+                            id="customerPhone"
+                            placeholder="Enter mobile number"
+                        >
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Email</label>
+
+                        <input
+                            type="email"
+                            id="customerEmail"
+                            placeholder="Enter email"
+                        >
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Select Movie</label>
+
+                        <select id="movieSelect">
+
+                            <option>Select Movie</option>
+                            <option>Avengers</option>
+                            <option>Interstellar</option>
+                            <option>Spider Man</option>
+                            <option>Joker</option>
+                            <option>Inception</option>
+                            <option>Frozen</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Number of Tickets</label>
+
+                        <input
+                            type="number"
+                            id="ticketCount"
+                            min="1"
+                            value="1"
+                        >
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Show Time</label>
+
+                        <select id="showTime">
+
+                            <option>10:00 AM</option>
+                            <option>01:00 PM</option>
+                            <option>04:00 PM</option>
+                            <option>07:00 PM</option>
+                            
+                        </select>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Seat Type</label>
+
+                        <select id="seatType">
+
+                            <option>Select Seat Type</option>
+                            <option>Regular</option>
+                            <option>Premium</option>
+                            <option>VIP</option>
+                            
+                        </select>
+
+                    </div>
+
+                    <button type="button" id="bookTicket">
+                        <i class="fa-solid fa-ticket"></i>
+                        Book Ticket
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!--==================== Booking Summary ====================-->
+
+        <section id="summary">
+
+            <div class="summary-heading">
+
+                <h1>Booking Summary</h1>
+
+                <p>Review your booking before confirming</p>
+
+            </div>
+
+            <div class="summary-container">
+
+                <div class="summary-row">
+                    <span>Movie</span>
+                    <span id="movieName">-</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Seat Type</span>
+                    <span id="seatName">-</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Tickets</span>
+                    <span id="ticketQty">0</span>
+                </div>
+
+                <hr>
+
+                <div class="summary-row">
+
+                    <span>Subtotal</span>
+
+                    <span id="subtotal">₹0</span>
+
+                </div>
+
+                <div class="summary-row">
+
+                    <span>GST (18%)</span>
+
+                    <span id="gst">₹0</span>
+
+                </div>
+
+                <div class="summary-row">
+
+                    <span>Discount</span>
+
+                    <span id="discount">₹0</span>
+
+                </div>
+
+                <hr>
+
+                <div class="summary-row total-row">
+
+                    <span>Total Amount</span>
+
+                    <span id="grandTotal">₹0</span>
+
+                </div>
+
+                <button id="confirmBooking">
+
+                    Confirm Booking
+
+                </button>
+
+                
+
+            </div>
+
+        </section>
+
+        <!--======================= Booking Timer ==============-->
+
+        <section id="timerSection">
+
+            <div class="timer-box">
+
+                <h2>
+                    Booking Ends In <i class="fa-regular fa-clock"></i>
+                </h2>
+
+                <div id="timer">
+
+                    <div>
+
+                        <span id="minutes">
+                            02
+                        </span>
+
+                        <small>MIN</small>
+
+                    </div>
+
+                    <span class="colon">:</span>
+
+                    <div>
+
+                        <span id="seconds">
+                            00
+                        </span>
+
+                        <small>SEC</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+    </main>
+
+    <!--===================== FOOTER =====================-->
+
+    <footer id="contact">
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+
+                <h2>
+                    <i class="fa-solid fa-video"></i>Movie<span class="red">Hub</span>
+                </h2>
+
+                <p>
+                    Your one-stop destination for booking
+                    blockbuster movies online.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="#hero">Home</a></li>
+
+                    <li><a href="#movies">Movies</a></li>
+
+                    <li><a href="#booking">Booking</a></li>
+
+                    <li><a href="#summary">Summary</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-contact">
+
+                <h3>Contact</h3>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 987654XXXX
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    moviehub@gmail.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Bhopal, India
+                </p>
+
+            </div>
+
+            <div class="footer-social">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-youtube"></i></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="copyright">
+
+            <p>
+                © 2026 MovieHub. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
