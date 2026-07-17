@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Internship Recruitment Portal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+
+<!--================ HEADER =================-->
+
+<header>
+
+    <nav>
+
+        <div class="logo-title">
+
+            <i class="fa-solid fa-user-graduate"></i>
+
+            <h1 class="title">
+
+                <span class="white">Intern</span><span class="blue">Hire</span>
+
+            </h1>
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="#hero">Home</a></li>
+
+            <li><a href="#register">Register</a></li>
+
+            <li><a href="#candidates">Candidates</a></li>
+
+            <li><a href="#timerSection">Interview</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+        <div class="nav-icons">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <i class="fa-solid fa-moon" id="themeToggle"></i>
+
+            <i class="fa-regular fa-user"></i>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<main>
+
+<!--================ HERO =================-->
+
+<section id="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-left">
+
+            <span class="hero-tag">
+
+                <h3>Internship Recruitment Portal</h3>
+
+            </span>
+
+            <h1>
+
+                Find Your
+
+                <span>Dream Internship</span>
+
+                Today
+
+            </h1>
+
+            <p>
+
+                Register yourself, check eligibility,
+
+                manage applications and prepare for
+
+                your interview in one place.
+
+            </p>
+
+            <div class="hero-btn">
+
+                <button class="primary-btn">
+
+                    Apply Now
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+                <button class="secondary-btn">
+
+                    View Candidates
+
+                    <i class="fa-solid fa-users"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+
+            <img src="assets/images/hero-image.jfif" alt="Hero">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ REGISTRATION =================-->
+
+<section id="register">
+
+    <div class="section-title">
+
+        <h1>Candidate Registration</h1>
+
+        <p>Fill your details to apply for internship.</p>
+
+    </div>
+
+    <div class="form-container">
+
+        <form id="candidateForm">
+
+            <div class="input-box">
+
+                <label>Candidate ID</label>
+
+                <input
+                    type="text"
+                    id="candidateId"
+                    placeholder="Enter ID">
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Full Name</label>
+
+                <input
+                    type="text"
+                    id="candidateName"
+                    placeholder="Enter Name">
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Age</label>
+
+                <input
+                    type="number"
+                    id="candidateAge"
+                    placeholder="Enter Age">
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    id="candidateEmail"
+                    placeholder="Enter Email">
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Qualification</label>
+
+                <select id="qualification">
+
+                    <option>Select Qualification</option>
+
+                    <option>BCA</option>
+
+                    <option>B.Tech</option>
+
+                    <option>MCA</option>
+
+                    <option>M.Tech</option>
+
+                </select>
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Skills</label>
+
+                <input
+                    type="text"
+                    id="candidateSkill"
+                    placeholder="HTML, CSS, JavaScript">
+
+            </div>
+
+            <button type="button" id="registerCandidate">
+
+                Register Candidate
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!--================ CANDIDATES =================-->
+
+<section id="candidates">
+
+    <div class="section-title">
+
+        <h1>Candidate Records</h1>
+
+        <p>Search and manage registered candidates.</p>
+
+    </div>
+
+    <div class="candidate-control">
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="searchCandidate"
+                placeholder="Search Candidate">
+
+        </div>
+
+    </div>
+
+    <div class="candidate-grid">
+
+        <!-- JS Cards -->
+
+    </div>
+
+</section>
+
+<!--================ SUMMARY =================-->
+
+<section id="summary">
+
+    <div class="section-title">
+
+        <h1>Application Summary</h1>
+
+    </div>
+
+    <div class="summary-container">
+
+        <div class="summary-row">
+
+            <span>Name</span>
+
+            <span id="summaryName">-</span>
+
+        </div>
+
+        <div class="summary-row">
+
+            <span>Qualification</span>
+
+            <span id="summaryQualification">-</span>
+
+        </div>
+
+        <div class="summary-row">
+
+            <span>Eligibility</span>
+
+            <span id="summaryEligibility">-</span>
+
+        </div>
+
+        <div class="summary-row">
+
+            <span>Interview Date</span>
+
+            <span id="summaryDate">-</span>
+
+        </div>
+
+        <button id="confirmApplication">
+
+            Confirm Application
+
+        </button>
+
+    </div>
+
+</section>
+
+<!--================ TIMER =================-->
+
+<section id="timerSection">
+
+    <div class="timer-box">
+
+        <h2>
+
+            Interview Starts In
+
+            <i class="fa-regular fa-clock"></i>
+
+        </h2>
+
+        <div id="timer">
+
+            <div>
+
+                <span id="minutes">05</span>
+
+                <small>MIN</small>
+
+            </div>
+
+            <span class="colon">:</span>
+
+            <div>
+
+                <span id="seconds">00</span>
+
+                <small>SEC</small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<!--================ FOOTER =================-->
+
+<footer id="contact">
+
+    <div class="footer-container">
+
+        <div class="footer-logo">
+
+            <h2>
+
+                <i class="fa-solid fa-user-graduate"></i>
+
+                Intern<span class="blue">Hire</span>
+
+            </h2>
+
+            <p>
+
+                A simple Internship Recruitment Portal
+
+                developed using HTML, CSS and JavaScript.
+
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="#hero">Home</a></li>
+
+                <li><a href="#register">Register</a></li>
+
+                <li><a href="#candidates">Candidates</a></li>
+
+                <li><a href="#timerSection">Interview</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-contact">
+
+            <h3>Contact</h3>
+
+            <p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
+
+            <p><i class="fa-solid fa-envelope"></i> internhire@gmail.com</p>
+
+            <p><i class="fa-solid fa-location-dot"></i> Bhopal, India</p>
+
+        </div>
+
+        <div class="footer-social">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="copyright">
+
+        <p>
+
+            © 2026 InternHire. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
